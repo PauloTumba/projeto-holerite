@@ -92,10 +92,10 @@ export class LoginComponent implements OnInit {
   if (this.loginForm.valid) {
   (this.configuracao.isLogin)
       ? this.loginService.login(this.loginForm.value).then((res: any) => {
-        console.log(status,'ola');
+        console.log(res,'ola');
         if(res==null){
           Mensagem.erro("Erro ao Logar");
-          this.router.navigate(['/gerar-holerite']);
+          // this.router.navigate(['/gerar-holerite']);
         }else{
           console.log(res,'existe');
           Mensagem.sucesso("Email  "+ this.loginForm.value.vc_email+", foi autenticado com sucesso");
