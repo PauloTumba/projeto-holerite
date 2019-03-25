@@ -1,0 +1,106 @@
+
+<div class="limiter">
+  
+      <!-- <app-gerar-holerite></app-gerar-holerite> -->
+  
+   
+  <div class="container-login100">
+  
+         
+     
+     
+  
+    <div class="wrap-login100 p-l-20 p-r-20 p-t-0 p-b-0">
+        <!-- <div class=" ">
+            <button  (click)="back()"  class="register100-form-btn ">
+             Cadastrar
+            </button>
+          </div> -->
+          
+        <div class="col-lg  col col-md container-login100-form-btn justify-content-center">
+            <img class="img-responsive logo" src="/assets/img/logo1.png" >          
+           <!-- <img class="logo" src="/assets/img/cofco1.png"  width="270" height="100">   -->
+        </div>
+        <span class=" login100-form-title p-b-0 justify-content-center">
+          {{configuracao.actionText}}
+          </span>
+      <form (submit)="onSubmit()" [formGroup]="loginForm" class="login100-form validate-form flex-sb flex-w">
+        <!-- <div class="container-login100-form-btn justify-content-center">
+            <img class="logo" src="/assets/img/logo1.png" >          
+           </div> -->
+
+        <div  [@openClose]="isOpen ? 'open' : 'closed'" class="wrap-input100 validate-input m-b-36">         
+          <div   *ngIf="!configuracao.isLogin"  class="{{mostrar}} wrap-input100 validate-input m-b-36">
+        
+              <span class="justify-content-end txt1 p-b-11">
+                Nome
+              </span>
+              <div class="wrap-input100 validate-inputm-b-10" data-validate = "Username is required">
+                
+                <input formControlName="vc_nome" class="input100" type="text" name="vc_nome" >
+                <span class="focus-input100"></span>
+              </div>
+            </div>        
+        </div>   
+
+        <span class="justify-content-end txt1 p-b-11">
+          E-mail
+        </span>
+        <div class="wrap-input100 validate-input m-b-36" data-validate = "Username is required">
+         
+          <input formControlName="vc_email" class="input100" type="text" name="vc_email" >
+          <span class="focus-input100"></span>
+        </div>
+        
+        <span class="txt1 p-b-11">
+          Senha
+        </span>
+        <div class="wrap-input100 validate-input m-b-12" data-validate = "Password is required">
+          <span  class="btn-show-pass">
+            <i (click)="mudarFaE()"    class="fa {{mudarFa}}"></i>
+          </span>
+          <input matInput formControlName="vc_senha" class="input100" type="{{mudarEstado}}" name="vc_senha" >         
+          <span class="focus-input100"></span>
+        </div>
+        
+        <div class="flex-sb-m w-full p-b-48">
+          <div class="contact100-form-checkbox">
+            <input matInput  class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+            <label class="label-checkbox100" for="ckb1">
+             Lembra-me
+            </label>
+          </div>
+
+          <div>
+            <a href="#" class="txt3">
+              Esqueceu sua Senha?
+            </a>
+          </div>
+        </div>
+
+        <div class="container-login100-form-btn justify-content-center">
+          <button  (click)="back()"  class=" login100-form-btn">
+              {{configuracao.actionText}}
+          </button>
+          
+        </div>
+       
+
+      </form>
+      <div class=" container-login100-form-btn justify-content-center ">
+        <button  (click)="green()"  class="txt3 login100-form-title"  (click)="changeAction()"  class=" justify-content-center ">
+            <a style="font-weight: bold; color: #0583b8" class="txt3">
+                {{configuracao.buttonActionText}}
+              </a> 
+            </button>
+     </div>
+    </div>
+  </div>
+</div>
+
+
+ 
+  
+
+<div id="dropDownSelect1"></div>
+
