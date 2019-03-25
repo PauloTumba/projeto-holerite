@@ -23,7 +23,7 @@ import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
       state('open', style({
         height: '72px',
         opacity: 1,
-        // backgroundColor: '#ffff',
+        // backgroundColor: '#ffffss',
         width: '100%'
        
       })),
