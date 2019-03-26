@@ -21,7 +21,7 @@ import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
     trigger('openClose', [
       // ...
       state('open', style({
-        height: '72px',
+        height: '71px',
         opacity: 1,
         // backgroundColor: '#ffffs',
         width: '100%'
