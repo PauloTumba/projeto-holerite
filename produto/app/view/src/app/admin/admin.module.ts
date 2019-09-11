@@ -3,9 +3,10 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminRoutes } from './admin.routing';
-import { LoginComponent } from '../rotas/login/login.component';
-import { ListarComponent } from '../rotas/listar/listar.component';
-import { BarraLateralComponent } from '../components/barra-lateral/barra-lateral.component';
+// import { LoginComponent } from '../rotas/login/login.component';
+// import { ListarComponent } from '../rotas/listar/listar.component';
+import { OpcoesHoleriteComponent } from '../rotas/opcoes-holerite/opcoes-holerite.component';
+import { ListarLixeirasComponent } from '../rotas/listar-lixeiras/listar-lixeiras.component';
 
 
 import {
@@ -29,9 +30,11 @@ import {
     MatTooltipModule,
   ],
   declarations: [
-    LoginComponent,
-    ListarComponent,
-    BarraLateralComponent
+    // LoginComponent,
+    // ListarComponent,
+    OpcoesHoleriteComponent,
+    ListarLixeirasComponent
+    // BarraLateralComponent
   
   ]
 })

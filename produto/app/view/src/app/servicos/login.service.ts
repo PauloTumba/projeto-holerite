@@ -2,7 +2,10 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders} from '@angular/common/http';
 import {APP_URL,APP_URL1} from '../app.config';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { Observable } from  'rxjs';
+import { Observable, observable } from  'rxjs';
+// import * as io from 'socket.io-client';
+import { strictEqual } from 'assert';
+
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +13,35 @@ import { Observable } from  'rxjs';
 export class LoginService {
 
 
-     
+  // private socket = io('localhost:8080');
+
+  // joinRoom(data){
+  //   this.socket.emit('nova', data);
+  // }
+  
+  // joinRoom(){
+  //   this.socket.emit('nova');
+  // }
+
+  // entrou(){
+  //   let observable =  new Observable<{data1:string, data2:string}>(observer=>{
+  //     this.socket.on('nova', (data)=>{
+  //       observer.next(data);
+  //     });
+  //     return() =>{this.socket.disconnect();}
+  //   });
+  //   return observable;
+  // }
+
+  // entrou(){
+  //   let observable =  new Observable<{user:string, message:string}>(observer=>{
+  //     this.socket.on('usuario novo', (data)=>{
+  //       observer.next(data);
+  //     });
+  //     return() =>{this.socket.disconnect();}
+  //   });
+  //   return observable;
+  // }
 
   constructor( private http: HttpClient,private router:Router,) { }
   verifica:any

@@ -17,7 +17,7 @@ import { BarraLateralComponent } from './barra-lateral/barra-lateral.component';
   exports: [
    
     NavbarComponent,
-    BarraLateralComponent
+    BarraLateralComponent,
   ]
 })
 export class ComponentsModule { }

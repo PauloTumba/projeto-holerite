@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './rotas/login/login.component';
-import { GerarHoleriteComponent } from './rotas/gerar-holerite/gerar-holerite.component';
-import { OpcoesHoleriteComponent } from './rotas/opcoes-holerite/opcoes-holerite.component';
-import { ListarComponent } from './rotas/listar/listar.component';
-import { BarraLateralComponent } from './components/barra-lateral/barra-lateral.component';
+// import { GerarHoleriteComponent } from './rotas/gerar-holerite/gerar-holerite.component';
+// import { OpcoesHoleriteComponent } from './rotas/opcoes-holerite/opcoes-holerite.component';
+// import { ListarComponent } from './rotas/listar/listar.component';
+// import { BarraLateralComponent } from './components/barra-lateral/barra-lateral.component';
 import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
 import { AdminComponent } from './admin/admin.component';
@@ -12,7 +12,7 @@ import { AdminComponent } from './admin/admin.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'barra',
+    redirectTo: 'admin',
     pathMatch: 'full',
   }, {
     path: '',
@@ -22,7 +22,8 @@ const routes: Routes = [
       loadChildren: './admin/admin.module#AdminModule'
     }]
   },
-  // {path: 'login',component:LoginComponent },
+  // {path: 'admin',component:AdminComponent },
+  {path: 'login',component:LoginComponent }
   // {path:'gerar-holerite',component:GerarHoleriteComponent},
   // {path:'opcoes-holerite',component:OpcoesHoleriteComponent},
   // {path: 'listar', component:ListarComponent},

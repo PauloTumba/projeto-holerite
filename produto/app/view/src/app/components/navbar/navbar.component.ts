@@ -123,6 +123,6 @@ getTitle(){
           return this.listTitles[item].title;
       }
   }
-  return 'Dashboard';
+  return 'opcoes';
 }
 }

@@ -1,0 +1,51 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <div class="card">
+                    <div style="background:#5b8805cf;" class="card-header card-header-success">
+                        <h4 class="card-title">Lixeiras</h4>
+                        <p class="card-category">Listagem</p>
+                    </div>
+                    <div class="card-body">
+
+                        <table class="table  rounded borda  ">
+                            <thead class=" cor ">
+                                <tr>
+                                    <th>Trash</th>
+                                    <th>Status</th>
+                                    <th>Usage</th>
+                                    <th>capacity</th>
+                                    <!-- <th>texto</th>
+                                        <th>como</th> -->
+                                    <th>Option</th>
+
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="justify-content-center" *ngFor="let lista of listas ;let idx=index ">
+                                    <td>{{lista.vc_nome}}</td>
+                                    <td>{{lista.ch_estado}} </td>
+                                    <td>{{lista.vc_usado}} % </td>
+                                    <td>{{lista.vc_capacidade}} L</td>
+                                    <!-- <th>{{room.texto}}</th>
+                                      <th>{{room.eu}}</th> -->
+                                    <td>
+                                        <!-- <button class="btn   btn-danger"   (click)="delete(lista, idx)">Apagar</button>  -->
+                                        <!-- <button class="btn   btn-danger"  >Apagar</button>  -->
+                                        <a class="mr-3" href=""><i class="iconess fa fa-edit " style="color:cyen" aria-hidden="true"></i></a>
+                                        <a class="mr-3" href=""><i class="icone fa fa-trash"></i></a>
+                                        <a href=""><i class="icones fa fa-plus"></i></a>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

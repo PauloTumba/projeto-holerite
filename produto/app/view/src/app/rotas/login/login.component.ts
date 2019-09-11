@@ -99,7 +99,7 @@ export class LoginComponent implements OnInit {
         }else{
           console.log(res,'existe');
           Mensagem.sucesso("Email  "+ this.loginForm.value.vc_email+", foi autenticado com sucesso");
-          this.router.navigate(['/opcoes-holerite']);
+          this.router.navigate(['/admin']);
         }
 
       })
@@ -112,7 +112,7 @@ export class LoginComponent implements OnInit {
 
 
   back() {
-    this.router.navigate(['/gerar-holerite']);
+    this.router.navigate(['/admin']);
     // console.log('ola');
   }
 

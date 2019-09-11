@@ -1,9 +1,12 @@
 import { Routes } from '@angular/router';
 
 
-import { LoginComponent } from '../rotas/login/login.component';
-import { ListarComponent } from '../rotas/listar/listar.component';
-import { BarraLateralComponent } from '../components/barra-lateral/barra-lateral.component';
+// import { LoginComponent } from '../rotas/login/login.component';
+// import { ListarComponent } from '../rotas/listar/listar.component';
+import { OpcoesHoleriteComponent } from '../rotas/opcoes-holerite/opcoes-holerite.component';
+import { ListarLixeirasComponent } from '../rotas/listar-lixeiras/listar-lixeiras.component';
+
+// import { BarraLateralComponent } from '../components/barra-lateral/barra-lateral.component';
 
 export const AdminRoutes: Routes = [
     // {
@@ -48,8 +51,9 @@ export const AdminRoutes: Routes = [
     //         component: UpgradeComponent
     //     }]
     // }
-    { path: 'barra',      component: BarraLateralComponent },
-    { path: 'login',   component: LoginComponent },
-    { path: 'listar',     component: ListarComponent },
+    //  { path: 'login',   component: LoginComponent },
+    // { path: 'listar',     component: ListarComponent },
+    { path:'opcoes', component: OpcoesHoleriteComponent},
+    {path: 'listar-lixeiras', component:ListarLixeirasComponent}
    
 ];
