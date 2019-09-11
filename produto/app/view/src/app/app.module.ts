@@ -8,22 +8,32 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GerarHoleriteComponent } from './rotas/gerar-holerite/gerar-holerite.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OpcoesHoleriteComponent } from './rotas/opcoes-holerite/opcoes-holerite.component';
+import { ListarComponent } from './rotas/listar/listar.component';
+import { BarraLateralComponent } from './components/barra-lateral/barra-lateral.component';
+import { AdminComponent } from './admin/admin.component';
+import {
+  AgmCoreModule
+} from '@agm/core';
+import { ComponentsModule } from './components/components.module';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
-    GerarHoleriteComponent,
-    OpcoesHoleriteComponent
+    AppComponent,       
+    AdminComponent,   
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule,
-    BrowserAnimationsModule, 
-    ReactiveFormsModule
+    HttpClientModule,   
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    FormsModule,  
+    ComponentsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
