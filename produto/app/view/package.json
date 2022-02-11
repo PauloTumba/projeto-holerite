@@ -29,7 +29,7 @@
     "@angular/platform-browser-dynamic": "^7.2.15",
     "@angular/platform-server": "7.0.2",
     "@angular/router": "^7.2.15",
-    "ajv": "6.4.0",
+    "ajv": "6.12.3",
     "angular-popper": "^2.0.1",
     "animate.css": "^3.7.1",
     "animsition": "^4.0.2",
